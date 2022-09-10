@@ -30,6 +30,7 @@ class TotalPayButton extends StatelessWidget {
               Text('250.55 USD', style: TextStyle(fontSize: 20))
             ],
           ),
+          //el cambio un blocBuilder para construir
           _BtnPay()
         ],
       ),
@@ -40,6 +41,8 @@ class TotalPayButton extends StatelessWidget {
 class _BtnPay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+//El booleano se cambia por el estado de la tarjetaactiva
+
     return true ? buildBotonTarjeta(context) : buildAppleAndGooglePay(context);
   }
 
@@ -69,6 +72,7 @@ class _BtnPay extends StatelessWidget {
         color: Colors.black,
         child: Row(
           children: [
+            //Forma de personalizar nativamente
             Icon(
                 Platform.isAndroid
                     ? FontAwesomeIcons.google

@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         'pago_completo': ( _ ) => PagoCompletoPage(),
       },
       theme: ThemeData.light().copyWith(
-        primaryColor: Color(0xff284879),
-        scaffoldBackgroundColor: Color(0xff21232A)
+        primaryColor: const Color(0xff284879),
+        scaffoldBackgroundColor: const Color(0xff21232A)
       ),
     );
   }

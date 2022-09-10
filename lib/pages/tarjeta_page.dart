@@ -26,15 +26,14 @@ class TarjetaPage extends StatelessWidget {
             Container(),
             Hero(
               tag: tarjeta.cardNumber,
+              // CreditCardWidget => Libreria
               child: CreditCardWidget(
                 cardNumber: tarjeta.cardNumberHidden,
                 expiryDate: tarjeta.expiracyDate,
                 cardHolderName: tarjeta.cardHolderName,
                 cvvCode: tarjeta.cvv,
                 showBackView: false,
-                onCreditCardWidgetChange: (tarjeta) {
-                  
-                },
+                onCreditCardWidgetChange: (tarjeta) {},
               ),
             ),
             Positioned(bottom: 0, child: TotalPayButton())
